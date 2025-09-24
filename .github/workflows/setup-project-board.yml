@@ -69,30 +69,30 @@ jobs:
                 title: "🔧 Setup: Create Project Board",
                 body: `## Manual Project Board Setup Required
 
-GitHub has deprecated the classic Projects API, so we need to create the project board manually.
+            GitHub has deprecated the classic Projects API, so we need to create the project board manually.
 
-### Steps to Create Your Research Project Board:
+            ### Steps to Create Your Research Project Board:
 
-1. **Go to Projects tab** (next to Actions)
-2. **Click "New project"** 
-3. **Choose "Board" layout**
-4. **Name**: \`Research Progress\`
-5. **Add columns**: 
-   - 🆕 **Backlog** (New issues and planned work)
-   - 🟡 **In Progress** (Currently active work) 
-   - 🔵 **In Review** (Work ready for review)
-   - 🟢 **Done** (Completed work)
+            1. **Go to Projects tab** (next to Actions)
+            2. **Click "New project"** 
+            3. **Choose "Board" layout**
+            4. **Name**: Research Progress
+            5. **Add columns**: 
+               - 🆕 **Backlog** (New issues and planned work)
+               - 🟡 **In Progress** (Currently active work) 
+               - 🔵 **In Review** (Work ready for review)
+               - 🟢 **Done** (Completed work)
 
-### CHI Research Workflow:
-- Use **SRDMPA labels** on issues: \`speculate\`, \`research\`, \`design\`, \`make\`, \`publish\`, \`assess\`
-- Create **Milestone issues** for major deliverables
-- Create **Research Log issues** weekly to track progress
-- Move issues through board columns as work progresses
+            ### CHI Research Workflow:
+            - Use **SRDMPA labels** on issues: speculate, research, design, make, publish, assess
+            - Create **Milestone issues** for major deliverables
+            - Create **Research Log issues** weekly to track progress
+            - Move issues through board columns as work progresses
 
-### Alternative:
-You can also link this repository to an existing CHI organization project board.
+            ### Alternative:
+            You can also link this repository to an existing CHI organization project board.
 
-*This setup issue will be automatically closed once you create your first project.*`,
+            *This setup issue will be automatically closed once you create your first project.*`,
                 labels: ['setup', 'project-management']
               });
               
