@@ -45,12 +45,31 @@ Issues and PRs automatically move through the board based on their status.
 - `.vscode/` - VS Code settings and recommended extensions
 
 ## 5. Setup
+
+### First Steps After Using This Template
+
+**Essential Updates** (do these first):
+1. **Update `README.md`** - Replace all `<placeholder>` text with your project details
+2. **Update `CITATION.cff`** - Add your name, project title, ORCID (if you have one)
+3. **Connect to CHI Meta-Project** - Link your work in `references/meta-projects.md`
+4. **Create First Issues** - Use the Milestone and Research Log templates
+
+**Development Environment**:
 - **Requirements**: <language / versions>
 - **Quick start**:
   ```bash
-  # create venv, install deps
+  # Run setup script
+  ./scripts/setup.sh
+  
+  # Or manually create project board
+  # Go to Actions → Setup Project Board → Run workflow
   ```
-- **Data**: Put raw files in `data/raw/` (consider Git LFS).
+- **Data**: Put raw files in `data/raw/` (consider Git LFS for large files)
+
+**Optional Customizations**:
+- Update `.vscode/settings.json` for personal preferences
+- Modify `CONTRIBUTING.md` if working with collaborators
+- Add project-specific files to `.gitignore`
 
 ## 6. How We Work
 

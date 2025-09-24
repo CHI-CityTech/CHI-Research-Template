@@ -132,20 +132,26 @@ This document explains every file and folder in your CHI research repository.
 
 When you create a repository from this template:
 
-1. **Update Core Files**:
-   - [ ] `README.md` - Add your project details
-   - [ ] `CITATION.cff` - Add your name and project info
+1. **Update Core Files** (Essential):
+   - [ ] `README.md` - Replace all `<placeholder>` text with your project details
+   - [ ] `CITATION.cff` - Add your name, project title, and ORCID (if you have one)
    
-2. **Connect to CHI**:
+2. **Connect to CHI Framework**:
    - [ ] Link to meta-project in `references/meta-projects.md`
-   - [ ] Create first Research Log issue
+   - [ ] Create first Research Log issue (choose your SRDMPA phase)
+   - [ ] Create first Milestone issue with concrete deliverables
    
-3. **Start Research**:
-   - [ ] Create first Milestone issue
+3. **Set Up Project Management**:
+   - [ ] Run `./scripts/setup.sh` or manually trigger "Setup Project Board" workflow
+   - [ ] Configure git if needed: `git config user.name` and `git config user.email`
+   
+4. **Start Research**:
    - [ ] Begin documentation in `docs/research-notes/`
+   - [ ] Add initial data to `data/raw/` if available
    
-4. **Optional Customizations**:
+5. **Optional Customizations**:
    - [ ] Update `.vscode/settings.json` for personal preferences
    - [ ] Modify `CONTRIBUTING.md` if working with collaborators
+   - [ ] Add project-specific patterns to `.gitignore`
 
 The template is designed so you can start research immediately while maintaining professional standards!
