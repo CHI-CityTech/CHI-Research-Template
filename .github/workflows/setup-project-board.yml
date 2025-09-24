@@ -59,42 +59,45 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // Create a new project board
-            const { data: project } = await github.rest.projects.createForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: "Research Progress",
-              body: "Track research milestones and tasks using Agile/Kanban methodology"
-            });
-
-            // Create columns in order
-            const columns = [
-              { name: "Backlog", note: "New issues and planned work" },
-              { name: "In Progress", note: "Currently active work" },
-              { name: "In Review", note: "Work ready for review or feedback" },
-              { name: "Done", note: "Completed work" }
-            ];
-
-            for (const column of columns) {
-              await github.rest.projects.createColumn({
-                project_id: project.id,
-                name: column.name,
-                note: column.note
-              });
-            }
-
-            console.log(`Created project board: ${project.html_url}`);
+            // Note: GitHub has deprecated classic projects API
+            // For now, we'll create an issue with instructions for manual project creation
             
-            // Add initial milestone card if this is a new repository
-            if (github.event_name == 'repository_dispatch' || github.event.ref_type == 'repository') {
-              const columns_response = await github.rest.projects.listColumns({
-                project_id: project.id
+            try {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: "🔧 Setup: Create Project Board",
+                body: `## Manual Project Board Setup Required
+
+GitHub has deprecated the classic Projects API, so we need to create the project board manually.
+
+### Steps to Create Your Research Project Board:
+
+1. **Go to Projects tab** (next to Actions)
+2. **Click "New project"** 
+3. **Choose "Board" layout**
+4. **Name**: \`Research Progress\`
+5. **Add columns**: 
+   - 🆕 **Backlog** (New issues and planned work)
+   - 🟡 **In Progress** (Currently active work) 
+   - 🔵 **In Review** (Work ready for review)
+   - 🟢 **Done** (Completed work)
+
+### CHI Research Workflow:
+- Use **SRDMPA labels** on issues: \`speculate\`, \`research\`, \`design\`, \`make\`, \`publish\`, \`assess\`
+- Create **Milestone issues** for major deliverables
+- Create **Research Log issues** weekly to track progress
+- Move issues through board columns as work progresses
+
+### Alternative:
+You can also link this repository to an existing CHI organization project board.
+
+*This setup issue will be automatically closed once you create your first project.*`,
+                labels: ['setup', 'project-management']
               });
               
-              const backlogColumn = columns_response.data.find(col => col.name === 'Backlog');
+              console.log("Created setup instructions issue for manual project board creation");
               
-              await github.rest.projects.createCard({
-                column_id: backlogColumn.id,
-                note: "Create your first milestone using the Milestone issue template"
-              });
+            } catch (error) {
+              console.log("Error creating setup issue:", error.message);
             }

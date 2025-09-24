@@ -90,19 +90,25 @@ Edit `references/meta-projects.md`:
 
 ### 3.1 Create Project Board
 
-Option A - Automatic:
-```bash
-./scripts/setup.sh
-```
+⚠️ **Note**: GitHub has deprecated automatic project board creation. You'll need to create it manually:
 
-Option B - Manual:
-1. Go to Actions tab in your repository
-2. Click "Setup Project Board"  
-3. Click "Run workflow" → "Run workflow"
+**Manual Setup (Required):**
+1. **Go to "Projects" tab** in your repository
+2. **Click "New project"**
+3. **Choose "Board" layout**
+4. **Name**: `Research Progress`
+5. **Add columns in order**:
+   - 🆕 **Backlog** (New issues and planned work)
+   - 🟡 **In Progress** (Currently active work)
+   - 🔵 **In Review** (Work ready for review or feedback)
+   - 🟢 **Done** (Completed work)
+
+**Alternative - Organization Project:**
+- Ask CHI administrators about linking to an existing organization-level project board
 
 ### 3.2 Create Your First Issues
 
-**Essential Issues to Create:**
+After creating your project board, create these essential issues:
 
 **Milestone Issue:**
 1. Go to Issues → New Issue → Milestone
