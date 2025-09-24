@@ -8,10 +8,10 @@ body:
     attributes:
       label: Phase
       options:
-        - Speculative
-        - Precedent
+        - Speculate
+        - Research
         - Design
-        - Produce
+        - Make
         - Publish
         - Assess
   - type: textarea

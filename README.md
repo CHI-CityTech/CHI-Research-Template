@@ -12,7 +12,7 @@
 - **Stretch**: <optional>
 
 ## 3. Research Plan (SRDMPA)
-- **Speculative → Precedent → Design → Produce → Publish → Assess**
+- **Speculate → Research → Design → Make → Publish → Assess**
 - Keep weekly notes in `docs/research-notes/`. Use the **Research Log** issue template.
 
 ## 4. Repo Structure
@@ -41,7 +41,7 @@ Issues and PRs automatically move through the board based on their status.
 - **Issues**: Use Milestone & Research Log templates (auto-added to Backlog)
 - **PRs**: Small, frequent; see checklist in PR template (auto-moves through board)
 - **AI Collaboration**: Log with the **AI Collaboration Report** issue template
-- **Labels**: Use CHI research phase labels (`design`, `produce`, `publish`, `assess`) and activity types (`milestone`, `research-log`, `ai-collaboration`)
+- **Labels**: Use CHI research phase labels (`speculate`, `research`, `design`, `make`, `publish`, `assess`) and activity types (`milestone`, `research-log`, `ai-collaboration`)
 
 ## 7. License & Citation
 

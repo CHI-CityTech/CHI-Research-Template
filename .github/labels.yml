@@ -4,9 +4,13 @@
   color: "17becf"
 - name: ai-collaboration
   color: "9467bd"
+- name: speculate
+  color: "bcbd22"
+- name: research
+  color: "ff9999"
 - name: design
   color: "ff7f0e"
-- name: produce
+- name: make
   color: "2ca02c"
 - name: publish
   color: "8c564b"
