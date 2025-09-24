@@ -1,0 +1,28 @@
+name: Research Log
+description: Weekly notes and sources (Speculative/Precedent)
+title: "Research Log: <YYYY-WW>"
+labels: ["research-log"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      options:
+        - Speculative
+        - Precedent
+        - Design
+        - Produce
+        - Publish
+        - Assess
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of Work
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources (Zotero links, DOIs, URLs)
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Decisions & Next Steps

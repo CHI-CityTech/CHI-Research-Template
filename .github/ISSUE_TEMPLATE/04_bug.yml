@@ -1,0 +1,17 @@
+name: Bug
+description: Something isn't working
+title: "bug: <short description>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
