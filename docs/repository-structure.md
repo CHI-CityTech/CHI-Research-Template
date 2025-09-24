@@ -16,6 +16,7 @@ This document explains every file and folder in your CHI research repository.
 - **Action**: Update with your name, project title, and details
 - **Why Root**: GitHub creates a "Cite this repository" button automatically
 - **Format**: YAML file following Citation File Format standard
+- **Comments**: Use `#` for comments to guide you through filling it out
 
 ### Configuration Files (Usually Don't Change)
 
