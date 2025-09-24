@@ -1,7 +1,7 @@
 # CHI Student Research Template
 
 > **This is a GitHub repository template for CHI (Center for Holistic Integration) student research projects**  
-> **Click "Use this template" to create your own research repository**
+> **Click "Use this template" at the bottom of this README to create your own research repository**
 
 [![GitHub Template](https://img.shields.io/badge/GitHub-Template-green)](https://github.com/CHI-CityTech/CHI-Research-Template)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
