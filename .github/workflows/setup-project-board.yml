@@ -9,6 +9,8 @@ on:
 jobs:
   setup-project:
     runs-on: ubuntu-latest
+    # Don't run in the template repository itself
+    if: github.repository != 'CHI-CityTech/CHI-Research-Template'
     steps:
       - name: Check if project already exists
         id: check-project
