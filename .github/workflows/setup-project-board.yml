@@ -1,0 +1,55 @@
+name: Setup Project Board
+on:
+  create:
+  repository_dispatch:
+    types: [setup-project]
+  workflow_dispatch:
+
+jobs:
+  setup-project:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.ref_type == 'repository'
+    steps:
+      - name: Create Project Board
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Create a new project board
+            const { data: project } = await github.rest.projects.createForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: "Research Progress",
+              body: "Track research milestones and tasks using Agile/Kanban methodology"
+            });
+
+            // Create columns in order
+            const columns = [
+              { name: "Backlog", note: "New issues and planned work" },
+              { name: "In Progress", note: "Currently active work" },
+              { name: "In Review", note: "Work ready for review or feedback" },
+              { name: "Done", note: "Completed work" }
+            ];
+
+            for (const column of columns) {
+              await github.rest.projects.createColumn({
+                project_id: project.id,
+                name: column.name,
+                note: column.note
+              });
+            }
+
+            console.log(`Created project board: ${project.html_url}`);
+            
+            // Add initial milestone card if this is a new repository
+            if (github.event_name == 'repository_dispatch' || github.event.ref_type == 'repository') {
+              const columns_response = await github.rest.projects.listColumns({
+                project_id: project.id
+              });
+              
+              const backlogColumn = columns_response.data.find(col => col.name === 'Backlog');
+              
+              await github.rest.projects.createCard({
+                column_id: backlogColumn.id,
+                note: "Create your first milestone using the Milestone issue template"
+              });
+            }

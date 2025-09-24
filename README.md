@@ -18,6 +18,15 @@
 ## 4. Repo Structure
 Briefly describe `src/`, `notebooks/`, `data/`, `docs/`, `references/`.
 
+### Project Board
+A Kanban board will be automatically created with columns:
+- **Backlog** - New issues and planned work
+- **In Progress** - Currently active tasks  
+- **In Review** - Work awaiting feedback
+- **Done** - Completed work
+
+Issues and PRs automatically move through the board based on their status.
+
 ## 5. Setup
 - **Requirements**: <language / versions>
 - **Quick start**:
@@ -28,9 +37,11 @@ Briefly describe `src/`, `notebooks/`, `data/`, `docs/`, `references/`.
 
 ## 6. How We Work
 
-- **Issues**: Use Milestone & Research Log templates.
-- **PRs**: Small, frequent; see checklist in PR template.
-- **AI Collaboration**: Log with the **AI Collaboration Report** issue template.
+- **Project Board**: Automatic Kanban board (Backlog → In Progress → In Review → Done)
+- **Issues**: Use Milestone & Research Log templates (auto-added to Backlog)
+- **PRs**: Small, frequent; see checklist in PR template (auto-moves through board)
+- **AI Collaboration**: Log with the **AI Collaboration Report** issue template
+- **Labels**: Use CHI research phase labels (`design`, `produce`, `publish`, `assess`) and activity types (`milestone`, `research-log`, `ai-collaboration`)
 
 ## 7. License & Citation
 
