@@ -1,84 +1,128 @@
-# <Project Title>
+# CHI Student Research Template
 
-> **One-sentence purpose**: <why this matters in the CHI ecosystem>  
-> **Meta-Project link**: See [`/references/meta-projects.md`](references/meta-projects.md)  
-> **Advisor(s)**: <Name(s)> • **Term**: <e.g., Fall 2025> • **Status**: Draft
+> **This is a GitHub repository template for CHI (Center for Holistic Integration) student research projects**  
+> **Click "Use this template" to create your own research repository**
 
-## 1. Abstract
-<~150 words: problem, approach, expected outcome.>
+[![GitHub Template](https://img.shields.io/badge/GitHub-Template-green)](https://github.com/CHI-CityTech/CHI-Research-Template)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 2. Goals & Deliverables
-- **LVP this term**: <e.g., sensor → data → one transformation → audio output>
-- **Stretch**: <optional>
+## What This Template Provides
 
-## 3. Research Plan (SRDMPA)
-- **Speculate → Research → Design → Make → Publish → Assess**
-- Keep weekly notes in `docs/research-notes/`. Use the **Research Log** issue template.
+### CHI Research Methodology Framework
+- **SRDMPA Cycle**: Speculate → Research → Design → Make → Publish → Assess
+- **Issue Templates**: Milestone, Research Log, AI Collaboration Report, Bug Report
+- **Labels**: Complete SRDMPA phase labels plus activity types
+- **Collaborative AI Integration**: Built-in tracking and evaluation templates
 
-## 4. Repo Structure
-Briefly describe `src/`, `notebooks/`, `data/`, `docs/`, `references/`. 
+### Project Management Tools
+- **Automatic Kanban Board**: Backlog → In Progress → In Review → Done
+- **GitHub Actions**: Label sync, project board automation, markdown linting
+- **Meta-Project Integration**: Links to CHI's 9 active research initiatives
+- **Academic Standards**: Citation file, license, code of conduct
 
-📖 **Detailed explanation**: See [`docs/repository-structure.md`](docs/repository-structure.md) for complete file descriptions.
+### Development Environment
+- **VS Code Integration**: Recommended extensions and workspace settings
+- **Documentation Structure**: Research notes, methodology templates
+- **Data Management**: Organized directories with clear provenance
+- **Git Configuration**: Appropriate ignore rules and LFS setup
 
-### Project Board
-A Kanban board will be automatically created with columns:
-- **Backlog** - New issues and planned work
-- **In Progress** - Currently active tasks  
-- **In Review** - Work awaiting feedback
-- **Done** - Completed work
+## CHI Meta-Projects (Connect Your Work)
 
-Issues and PRs automatically move through the board based on their status.
+This template supports research within CHI's active meta-projects:
 
-### Repository Files
-**Core Files** (update these for your project):
-- `README.md` - This file, your project overview
-- `CITATION.cff` - How others should cite your work
-- `LICENSE` - MIT license for your code
+1. **Balanced Blended Space (BBS)** - Framework for human-AI collaboration
+2. **Built Environment (BE)** - Architecture, engineering, climate integration
+3. **Blended Shadow Puppet (BSP)** - Performative and narrative research
+4. **Collaborative AI** - AI as research partner methodology
+5. **Holistic STEM Education** - Contemplative creativity in inquiry
+6. **International Collaboration** - Austria-City Tech partnership
+7. **Cultural Popup Dining Experience** - Interdisciplinary storytelling
+8. **Combinative Reality** - Physical/digital learning environments
+9. **UNESCO World-Building** - Heritage transformation research
 
-**Configuration Files** (usually don't need changes):
-- `CONTRIBUTING.md` - Guidelines for contributing
-- `CODE_OF_CONDUCT.md` - Behavior expectations  
-- `SECURITY.md` - Security policies
-- `.gitignore` - Files Git should ignore
-- `.gitattributes` - Git LFS configuration for large files
-- `.editorconfig` - Consistent code formatting
-- `.vscode/` - VS Code settings and recommended extensions
+*Full descriptions available in [`references/meta-projects.md`](references/meta-projects.md)*
 
-## 5. Setup
+## Repository Structure
 
-### First Steps After Using This Template
+```
+CHI-Research-Template/
+├── README.md                    # This template overview
+├── docs/
+│   ├── researcher-setup.md      # Post-template setup guide
+│   ├── repository-structure.md  # Detailed file explanations
+│   └── research-notes/          # Weekly research logs
+├── .github/
+│   ├── ISSUE_TEMPLATE/          # CHI methodology templates
+│   ├── workflows/               # Automated project management
+│   └── labels.yml              # SRDMPA phase labels
+├── data/                       # Research data organization
+├── src/                        # Source code
+├── notebooks/                  # Jupyter analysis notebooks
+├── references/                 # CHI framework connections
+├── CITATION.cff                # Academic citation format
+└── [standard project files]
+```
 
-**Essential Updates** (do these first):
-1. **Update `README.md`** - Replace all `<placeholder>` text with your project details
-2. **Update `CITATION.cff`** - Add your name, project title, ORCID (if you have one)
-3. **Connect to CHI Meta-Project** - Link your work in `references/meta-projects.md`
-4. **Create First Issues** - Use the Milestone and Research Log templates
+## Getting Started
 
-**Development Environment**:
-- **Requirements**: <language / versions>
-- **Quick start**:
-  ```bash
-  # Run setup script
-  ./scripts/setup.sh
-  
-  # Or manually create project board
-  # Go to Actions → Setup Project Board → Run workflow
-  ```
-- **Data**: Put raw files in `data/raw/` (consider Git LFS for large files)
+### For Students/Researchers
 
-**Optional Customizations**:
-- Update `.vscode/settings.json` for personal preferences
-- Modify `CONTRIBUTING.md` if working with collaborators
-- Add project-specific files to `.gitignore`
+1. **Click "Use this template"** (green button above)
+2. **Name your repository**: `student-[lastname]-[project-name]`
+3. **Follow the setup guide**: [`docs/researcher-setup.md`](docs/researcher-setup.md)
+4. **Connect to meta-project**: Link your work to CHI initiatives
 
-## 6. How We Work
+### For Administrators
 
-- **Project Board**: Automatic Kanban board (Backlog → In Progress → In Review → Done)
-- **Issues**: Use Milestone & Research Log templates (auto-added to Backlog)
-- **PRs**: Small, frequent; see checklist in PR template (auto-moves through board)
-- **AI Collaboration**: Log with the **AI Collaboration Report** issue template
-- **Labels**: Use CHI research phase labels (`speculate`, `research`, `design`, `make`, `publish`, `assess`) and activity types (`milestone`, `research-log`, `ai-collaboration`)
+- **Template Maintenance**: See [`docs/repository-structure.md`](docs/repository-structure.md)
+- **CHI Framework Updates**: Modify [`references/meta-projects.md`](references/meta-projects.md)
+- **Workflow Customization**: Update `.github/workflows/` as needed
 
-## 7. License & Citation
+## CHI Philosophy Integration
 
-See `LICENSE` and `CITATION.cff`.
+This template embodies CHI's core principles:
+
+- **Holism**: Welcomes all disciplines meaningfully
+- **Inclusivity**: Respects diverse outputs and approaches
+- **Integration as Endpoint**: Meta-integration is the goal, not just means
+- **Collaborative AI**: AI as partner, not tool
+- **SRDMPA Methodology**: Structured research progression
+- **Academic Standards**: Proper citation and reproducibility
+
+## Template Features
+
+### Automatic Project Board
+- **Kanban columns** manage workflow states
+- **Issue integration** automatically moves cards
+- **Research phases** tracked via CHI labels
+
+### Issue Templates
+- **Milestone**: Define concrete deliverables with acceptance criteria  
+- **Research Log**: Weekly SRDMPA phase documentation
+- **AI Collaboration Report**: Track and evaluate AI partnership
+- **Bug Report**: Standard technical issue reporting
+
+### GitHub Actions
+- **Label Sync**: Maintains consistent CHI labels
+- **Project Board Automation**: Moves issues through workflow
+- **Meta-Project Integration**: Links completed work to CHI initiatives
+- **Markdown Linting**: Ensures documentation quality
+
+## Support and Documentation
+
+- **Researcher Setup**: [`docs/researcher-setup.md`](docs/researcher-setup.md)
+- **Repository Guide**: [`docs/repository-structure.md`](docs/repository-structure.md)  
+- **CHI Meta-Projects**: [`references/meta-projects.md`](references/meta-projects.md)
+- **Issue Templates**: Use GitHub Issues → New Issue
+
+## License and Citation
+
+This template is available under the MIT License. Individual student projects created from this template inherit the license but should update the `CITATION.cff` file with their specific project information.
+
+## Contributing to the Template
+
+Template improvements should be submitted as pull requests to `CHI-CityTech/CHI-Research-Template`. For individual research projects, follow the contribution guidelines in your project repository.
+
+---
+
+**Ready to start your CHI research project?** → **[Use this template](../../generate)** ← Click here!
