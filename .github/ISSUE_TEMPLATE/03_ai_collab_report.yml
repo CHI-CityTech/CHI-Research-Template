@@ -1,8 +1,22 @@
 name: AI Collaboration Report
-description: What did AI do, and how did you evaluate it?
+description: Document AI tool usage and contributions to your research project
 title: "AI Collab: <short>"
 labels: ["ai-collaboration"]
 body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Research Phase
+      description: Which SRDMPA phase was AI supporting?
+      options:
+        - 01-speculate
+        - 02-research
+        - 03-design
+        - 04-make
+        - 05-publish
+        - 06-assess
+    validations:
+      required: false
   - type: textarea
     id: prompt
     attributes:

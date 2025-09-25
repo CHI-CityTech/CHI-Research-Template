@@ -1,6 +1,6 @@
-name: Bug
-description: Something isn't working
-title: "bug: <short description>"
+name: Bug Report
+description: Technical issues, debugging tasks, or things that aren't working in your research
+title: "Bug: <short description>"
 labels: ["bug"]
 body:
   - type: textarea

@@ -1,8 +1,22 @@
 name: Milestone
-description: Define a concrete deliverable and acceptance criteria
+description: Define a concrete deliverable and acceptance criteria for your research project
 title: "Milestone: <short name>"
 labels: ["milestone"]
 body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Primary SRDMPA Phase
+      description: Which research phase does this milestone primarily support?
+      options:
+        - 01-speculate
+        - 02-research
+        - 03-design
+        - 04-make
+        - 05-publish
+        - 06-assess
+    validations:
+      required: true
   - type: textarea
     id: goal
     attributes:
