@@ -71,7 +71,7 @@ CHI-Research-Template/
 2. **⚠️ IMPORTANT**: In Owner dropdown, select **CHI-CityTech** (not your personal account)
 3. **Name your repository**: `student-[lastname]-[project-name]`
 4. **Set to Private** during research phase (make public when ready to share)
-5. **Follow the setup guide**: [`docs/researcher-setup.md`](docs/researcher-setup.md)
+5. **Follow the setup guide**: [`docs/setup/researcher-setup.md`](docs/setup/researcher-setup.md)
 6. **Connect to meta-project**: Link your work to CHI initiatives
 
 > **Don't see CHI-CityTech in the Owner dropdown?** Contact CHI administrators to be added to the organization first.
@@ -114,8 +114,9 @@ This template embodies CHI's core principles:
 
 ## Support and Documentation
 
-- **Researcher Setup**: [`docs/researcher-setup.md`](docs/researcher-setup.md)
+- **Researcher Setup**: [`docs/setup/researcher-setup.md`](docs/setup/researcher-setup.md)
 - **Repository Guide**: [`docs/repository-structure.md`](docs/repository-structure.md)  
+- **Project Board Setup**: [`docs/setup/`](docs/setup/) - Templates and instructions for GitHub Project Boards
 - **CHI Meta-Projects**: [`references/meta-projects.md`](references/meta-projects.md)
 - **Issue Templates**: Use GitHub Issues → New Issue
 
