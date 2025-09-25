@@ -1,5 +1,29 @@
 # CHI Research Project Board Template
 
+<!-- 
+🔧 CUSTOMIZATION INSTRUCTIONS:
+When using this template for your project board, customize as follows:
+
+KEEP UNCHANGED:
+- Board Structure section (5-column workflow)
+- SRDMPA Methodology Integration
+- Getting Started sections 1-3
+- Best Practices (all subsections)
+- Troubleshooting section
+
+CUSTOMIZE FOR YOUR PROJECT:
+1. Replace title: "CHI Research Project Board Template" → "[Your Project Name] Research Board"
+2. Update Overview to describe YOUR specific research project
+3. Replace ALL Sample Test Issues with examples from YOUR research topic
+4. Update footer with your project details (remove template version info)
+5. Modify Integration section if your project has different architecture
+
+DELETE ENTIRELY:
+- These customization instructions (this comment block)
+- Sample Test Issues section (replace with your own examples)
+- Template Version footer
+-->
+
 ## Overview
 
 This project board template supports the **CHI (Center for Holistic Integration) research methodology** using a structured Kanban workflow combined with SRDMPA phase tracking through issue labels.
@@ -106,6 +130,20 @@ Tag each issue with the appropriate research phase:
 - **Knowledge sharing** - Comment on issues to share insights
 
 ## Sample Test Issues
+
+<!-- 
+📝 REPLACE THIS SECTION:
+The examples below use "AI Bias in Hiring" as a sample research topic.
+Replace ALL of these examples with issues from YOUR actual research project.
+
+For each issue type, create 1-2 examples that reflect:
+- Your specific research question/topic
+- Your actual timeline and deliverables  
+- Your methodology and approach
+- Your real data sources and tools
+
+Keep the same FORMAT but change the CONTENT to match your project.
+-->
 
 To test your project board setup, create these example issues:
 
