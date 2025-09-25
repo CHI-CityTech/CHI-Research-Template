@@ -1,22 +1,38 @@
-- name: milestone
-  color: "1f77b4"
-- name: research-log
-  color: "17becf"
-- name: ai-collaboration
-  color: "9467bd"
-- name: speculate
+# SRDMPA Methodology Labels (Sequential Order)
+- name: "01-speculate"
+  description: "Forming research questions and hypotheses"
   color: "bcbd22"
-- name: research
+- name: "02-research"
+  description: "Literature review and background investigation"
   color: "ff9999"
-- name: design
+- name: "03-design"
+  description: "Planning methodology and approach"
   color: "ff7f0e"
-- name: make
+- name: "04-make"
+  description: "Implementing, building, or conducting research"
   color: "2ca02c"
-- name: publish
+- name: "05-publish"
+  description: "Documenting and sharing results"
   color: "8c564b"
-- name: assess
+- name: "06-assess"
+  description: "Evaluating outcomes and planning next steps"
   color: "e377c2"
-- name: help-wanted
-  color: "d62728"
-- name: bug
+
+# Activity Type Labels
+- name: "activity-milestone"
+  description: "Major deliverables and project goals"
+  color: "1f77b4"
+- name: "activity-research-log"
+  description: "Weekly progress tracking"
+  color: "17becf"
+- name: "activity-ai-collaboration"
+  description: "AI tool usage and evaluation"
+  color: "9467bd"
+- name: "activity-bug"
+  description: "Technical issues and problems"
   color: "d73a4a"
+
+# Standard Labels
+- name: "help-wanted"
+  description: "Extra attention is needed"
+  color: "d62728"
