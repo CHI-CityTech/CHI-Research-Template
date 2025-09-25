@@ -9,12 +9,12 @@
 - [ ] **Update project description** to reflect your specific research focus
 
 ### **2. Documentation Setup**  
-- [ ] **Copy project board README** from CHI-Research-Template repository
+- [ ] **Copy project board README** from [project-board-README.md](https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/project-board-README.md)
 - [ ] **Customize the README** for your research topic (remove template examples)
 - [ ] **Add project README link** to this board's description
 
 ### **3. Research Foundation**
-- [ ] **Create first milestone issue** using CHI issue templates with your actual research goals  
+- [ ] **Create first milestone issue** using [CHI issue templates](https://github.com/CHI-CityTech/CHI-Research-Template/tree/main/.github/ISSUE_TEMPLATE) with your actual research goals  
 - [ ] **Create initial research log** for current week using proper SRDMPA phase
 - [ ] **Add your research-specific labels** beyond the standard SRDMPA set
 
@@ -32,13 +32,20 @@
 
 ## 📚 DOCUMENTATION LINKS
 
-**Full Setup Guide:**
-https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/project-template-README.md
+**Project Board README Template:**
+https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/project-board-README.md
 
 **Repository Template:**
 https://github.com/CHI-CityTech/CHI-Research-Template
 
-**CHI Issue Templates:** Available in your repository after using CHI-Research-Template
+**CHI Issue Templates:**
+https://github.com/CHI-CityTech/CHI-Research-Template/tree/main/.github/ISSUE_TEMPLATE
+
+**Researcher Setup Guide:**
+https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/researcher-setup.md
+
+**CHI Meta-Projects Reference:**
+https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/references/meta-projects.md
 
 ---
 

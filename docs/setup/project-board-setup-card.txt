@@ -9,7 +9,8 @@ QUICK SETUP STEPS:
 □ Copy the project board README:
   https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/project-board-README.md
 
-□ Create your first real research issues using CHI issue templates
+□ Create your first real research issues using CHI issue templates:
+  https://github.com/CHI-CityTech/CHI-Research-Template/tree/main/.github/ISSUE_TEMPLATE
 
 □ Move this card to Done when setup is complete (or delete it)
 
