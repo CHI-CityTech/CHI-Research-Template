@@ -1,3 +1,9 @@
+# 📝 EDIT THIS README UPON PROJECT CREATION
+
+**🚨 IMPORTANT: This is a template README. Customize it for your specific research project before using.**
+
+---
+
 # CHI Research Project Board Template
 
 <!-- 
@@ -19,6 +25,7 @@ CUSTOMIZE FOR YOUR PROJECT:
 5. Modify Integration section if your project has different architecture
 
 DELETE ENTIRELY:
+- The "EDIT THIS README" warning at the top
 - These customization instructions (this comment block)
 - Sample Test Issues section (replace with your own examples)
 - Template Version footer
