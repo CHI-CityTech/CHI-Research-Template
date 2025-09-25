@@ -23,7 +23,53 @@
 - [ ] **Publish** - Documenting and sharing results
 - [ ] **Assess** - Evaluating outcomes and planning next steps
 
-## Quick Start
+## 🚀 Quick Setup (Complete These Steps First)
+
+### 1. Set Up Project Board
+1. **Go to Projects tab** → **New project**
+2. **Select "CHI Research Template"** from organization templates (if available)
+   - OR manually create **Board layout** with columns: Backlog → In Progress → In Review → Done
+3. **Name**: `[Your Project Name] Research Progress`
+4. **Link this repository** to the project
+
+### 2. Update This README
+- [ ] Replace `[Project Title]` with your actual project name
+- [ ] Fill in your research focus and goals
+- [ ] Select your CHI meta-project connections
+- [ ] Choose your current SRDMPA phase
+
+### 3. Create First Issues
+- [ ] **Milestone Issue**: Define your first major deliverable using the Milestone template
+- [ ] **Research Log Issue**: Start weekly progress tracking using Research Log template
+- [ ] **Label appropriately**: Use `01-speculate` through `06-assess` plus `activity-*` labels
+
+### 4. Follow Detailed Setup
+See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configuration guide.
+
+---
+
+## Project Overview
+
+**Research Focus**: [Brief description of your research question or project goals]
+
+**CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
+- [ ] META-Balanced-Blended-Space
+- [ ] META-Blended-Shadow-Puppet  
+- [ ] META-Collaborative-AI
+- [ ] META-International-Collaboration
+- [ ] META-Cultural-Popup-Experiences
+- [ ] META-Blended-Reality-Performance-System
+- [ ] Other: [Specify]
+
+**Current SRDMPA Phase**: [Select current phase]
+- [ ] **01-Speculate** - Forming research questions and hypotheses
+- [ ] **02-Research** - Literature review and background investigation
+- [ ] **03-Design** - Planning methodology and approach
+- [ ] **04-Make** - Implementing, building, or conducting research
+- [ ] **05-Publish** - Documenting and sharing results
+- [ ] **06-Assess** - Evaluating outcomes and planning next steps
+
+## Getting Started
 
 ### Prerequisites
 - [List any software, hardware, or knowledge requirements]
