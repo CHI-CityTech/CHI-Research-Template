@@ -92,10 +92,12 @@ Tag each issue with the appropriate research phase:
 - **Weekly planning** - Review and assign upcoming work during meetings
 
 ### For Faculty Advisors
-- **Review backlog priorities** - Help students focus on high-impact work
+- **Monitor master board** - Use CHI-StudentResearch project board for oversight across all students
+- **Link student projects** - Connect individual student boards to master tracking system
+- **Review backlog priorities** - Help students focus on high-impact work during weekly meetings
 - **Provide timely feedback** - Monitor Review column for work needing attention
-- **Track methodology** - Ensure SRDMPA phases are properly represented
-- **Celebrate completion** - Acknowledge work moving to Done column
+- **Track methodology** - Ensure SRDMPA phases are properly represented across projects
+- **Celebrate completion** - Acknowledge work moving to Done column and major milestone achievements
 
 ### For Research Teams
 - **Collaborative planning** - Use weekly meetings to assign from backlog
@@ -103,7 +105,89 @@ Tag each issue with the appropriate research phase:
 - **Cross-review** - Team members can review each other's work
 - **Knowledge sharing** - Comment on issues to share insights
 
-## Integration with Repository
+## Sample Test Issues
+
+To test your project board setup, create these example issues:
+
+### **Milestone Examples:**
+1. **Title:** `Milestone: Complete AI Bias Literature Survey`
+   - **Phase:** `02-research`
+   - **Goal:** Comprehensive review of AI bias research from 2020-2024
+   - **Acceptance Criteria:** 
+     - [ ] 25+ peer-reviewed papers reviewed
+     - [ ] Summary matrix created with bias types and detection methods
+     - [ ] Key gaps identified for research focus
+   - **Due:** 2024-10-15
+
+2. **Title:** `Milestone: Build Bias Detection Prototype`
+   - **Phase:** `04-make`  
+   - **Goal:** Working prototype that detects gender bias in job descriptions
+   - **Acceptance Criteria:**
+     - [ ] Process 100+ job postings
+     - [ ] Generate bias confidence scores
+     - [ ] Demo runs without errors
+     - [ ] Basic web interface functional
+
+### **Research Log Examples:**
+3. **Title:** `Research Log: 2024-W39`
+   - **Phase:** `01-speculate`
+   - **Summary:** Initial research question formation and hypothesis development
+   - **Sources:** DOI links to 5 foundational papers on AI bias
+   - **Decisions:** Focus on hiring bias, use NLP techniques for detection
+
+4. **Title:** `Research Log: 2024-W42`
+   - **Phase:** `04-make`
+   - **Summary:** Implemented basic NLP pipeline, tested on sample dataset
+   - **Sources:** Scikit-learn documentation, spaCy tutorials
+   - **Decisions:** Use BERT embeddings, need larger training dataset
+
+### **AI Collaboration Examples:**
+5. **Title:** `AI Collab: Literature Search Strategy`
+   - **Phase:** `02-research`
+   - **Prompts:** "Help me identify key search terms for AI hiring bias research"
+   - **Output:** Generated 20+ academic search terms and Boolean queries
+   - **Evaluation:** 85% of terms were relevant, missing some domain-specific terminology
+
+6. **Title:** `AI Collab: Code Review and Documentation`
+   - **Phase:** `05-publish`
+   - **Prompts:** "Review this Python script for bias detection and suggest improvements"
+   - **Output:** Identified 3 bugs, suggested 5 performance optimizations
+   - **Evaluation:** Recommendations were accurate, saved 2 hours of debugging
+
+### **Bug Report Example:**
+7. **Title:** `Bug: Dataset loading fails with Unicode errors`
+   - **What happened:** CSV import crashes when processing job descriptions with special characters
+   - **Expected:** Should handle all UTF-8 characters gracefully
+   - **Repro Steps:** Load jobs_dataset.csv, process descriptions with encoding='utf-8'
+
+## Integration with CHI Research Ecosystem
+
+This individual project board integrates with the broader CHI research management system:
+
+### **CHI Research Architecture:**
+- **Master Project Board** - Located in `CHI-StudentResearch` repository for faculty oversight
+- **Individual Project Boards** - This template creates detailed workflow boards for each student
+- **Repository Templates** - `CHI-Research-Template` provides standardized project structure
+
+### **Two-Tier Project Management:**
+
+**Faculty Level (Master Board in CHI-StudentResearch):**
+- High-level tracking of all student research projects
+- Links to individual student project boards for detailed monitoring
+- Cross-project coordination and resource allocation
+- Milestone tracking and deadline management
+
+**Student Level (Individual Project Board - This Template):**
+- Daily and weekly task management using SRDMPA methodology
+- Detailed workflow: Backlog → Assigned → Active → Review → Done
+- Research phase tracking through issue labels
+- Personal productivity and research progress
+
+### **Integration Workflow:**
+1. **Student creates repository** from CHI-Research-Template
+2. **Student creates project board** using this template
+3. **Faculty links student project** to master board in CHI-StudentResearch
+4. **Regular reporting** flows from individual to master board level
 
 This project board works seamlessly with:
 - **CHI Issue Templates** - Structured issue creation
