@@ -120,6 +120,36 @@ See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configur
 
 For detailed explanations, see `docs/repository-structure.md`.
 
+## Minimal skeleton & recommended cleanup
+
+When you instantiate this template, you may see many files and directories. Not all are strictly required for every project. The steps below will help you simplify your repository while keeping essential functionality.
+
+Essential (keep these unless you have a specific reason to remove):
+- `README.md` - Project overview and quick setup (update from this template)
+- `CITATION.cff` - Citation metadata for academic projects
+- `LICENSE` - License for the repository
+- `CONTRIBUTING.md` - Contribution guidelines for your collaborators
+- `.gitignore` & `.gitattributes` - Git configuration
+- `docs/` - Setup and repository structure docs (keep at least `docs/researcher-setup.md`)
+- `.github/ISSUE_TEMPLATE/` - Issue templates used by the project
+
+Optional (safe to delete or move to `docs/` if not needed):
+- `scripts/` - Helper scripts; move essentials into `docs/` or keep only the ones you use
+- `data/` - Data folders or placeholders (if you don't store data in the repo, you can remove these directories)
+- `notebooks/` - Jupyter notebooks (keep only those you actively use)
+- `tests/` - Testing scaffolding (remove if not using automated tests)
+- `references/` - Reference lists and meta-project links (move to `docs/` if preferred)
+
+Cleanup checklist (run after instantiation):
+1. Update `README.md` from this template: replace placeholders and remove sections that don't apply.
+2. Remove `README.template.md` (the setup workflow does this automatically if present).
+3. Remove or prune `data/`, `notebooks/`, `tests/` directories if they are only placeholders.
+4. Review `.github/workflows/` and keep only the automation you will rely on. Remove the setup workflow once it has run.
+5. Update `CITATION.cff` and `LICENSE` for your project.
+6. Add a brief `SETUP.md` (optional) documenting how this repository was initialized and what the template changed.
+
+If you want a completely minimal repo, keep only `README.md`, `LICENSE`, `CITATION.cff`, and `.gitignore` — everything else can be added later as needed.
+
 ## Contributing
 
 ### For Collaborators

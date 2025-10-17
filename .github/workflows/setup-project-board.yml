@@ -2,10 +2,10 @@ name: Setup Project Board
 permissions:
   contents: write
 on:
-  push:
-    branches: [ main ]
+  repository:
+    types: [ created ]
   repository_dispatch:
-    types: [setup-project]
+    types: [ setup-project ]
   workflow_dispatch:
 
 jobs:
@@ -50,6 +50,9 @@ jobs:
             git config user.name "CHI Template Setup"
             git config user.email "action@github.com"
             git add README.md
+
+            # Ensure the template file is removed from the repo (stage deletion)
+            git rm -f README.template.md || true
 
             # Remove the setup workflow so this script only runs once
             if [ -f ".github/workflows/setup-project-board.yml" ]; then
