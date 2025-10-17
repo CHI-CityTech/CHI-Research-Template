@@ -58,6 +58,34 @@ Research phases are tracked through **issue labels**, not board columns:
 - `05-publish` - Documentation, writing, presentation preparation
 - `06-assess` - Evaluation, reflection, iteration planning
 
+## Complete Label System
+
+### SRDMPA Phase Labels (Primary Classification)
+The six core research phases above are **automatically synced** to your repository when you use the CHI-Research-Template.
+
+### Activity Type Labels (Secondary Classification)
+Combine SRDMPA phases with activity types for precise tracking:
+
+- `activity-milestone` - Major deliverables and project goals (🔵 blue)
+- `activity-research-log` - Weekly progress tracking (🟦 cyan) 
+- `activity-ai-collaboration` - AI tool usage and evaluation (🟣 purple)
+- `activity-bug` - Technical issues and problems (🔴 red)
+
+### Standard Repository Labels
+General purpose labels for project management:
+
+- `help-wanted` - Extra attention is needed (🟥 red)
+- `documentation` - Improvements or additions to documentation (🔷 blue)
+- `enhancement` - New feature or request (🟦 light blue)
+
+### Label Combination Examples
+Most issues should have both a phase and activity label:
+
+- Milestone + Speculate: `01-speculate` + `activity-milestone`
+- Weekly Log + Research: `02-research` + `activity-research-log`
+- AI Collaboration + Design: `03-design` + `activity-ai-collaboration`
+- Bug Fix + Make: `04-make` + `activity-bug`
+
 ## Workflow Examples
 
 ### Individual Research Project
@@ -80,17 +108,25 @@ Use the **CHI Issue Templates**:
 - **AI Collaboration Report** - Document AI tool usage and contributions
 - **Bug Report** - Technical issues and debugging tasks
 
-### 2. Apply SRDMPA Labels
+### 2. Apply Complete Labels
 
-Tag each issue with the appropriate research phase:
+Tag each issue with **both** SRDMPA phase and activity type labels:
+
 ```markdown
-- Milestone: "Complete literature review analysis" → 01-speculate + 02-research
-- Research Log: "Week 23-15 AI bias investigation" → 02-research  
-- Milestone: "Build bias detection prototype" → 03-design + 04-make
-- Research Log: "Week 23-16 Statistical analysis" → 04-make
-- Milestone: "Draft conference paper" → 05-publish
-- Research Log: "Week 23-17 Reflection on methods" → 06-assess
+- Milestone: "Complete literature review analysis" → 01-speculate + 02-research + activity-milestone
+- Research Log: "Week 23-15 AI bias investigation" → 02-research + activity-research-log
+- AI Collab: "Literature search strategy" → 02-research + activity-ai-collaboration  
+- Milestone: "Build bias detection prototype" → 03-design + 04-make + activity-milestone
+- Research Log: "Week 23-16 Statistical analysis" → 04-make + activity-research-log
+- Bug Fix: "CSV parsing error in analysis script" → 04-make + activity-bug
+- Milestone: "Draft conference paper" → 05-publish + activity-milestone
+- Research Log: "Week 23-17 Reflection on methods" → 06-assess + activity-research-log
 ```
+
+**Pro Tips:**
+- Most issues cross multiple SRDMPA phases (use both labels)
+- Always include an `activity-*` label for clear categorization
+- Use `help-wanted` for issues needing faculty/peer assistance
 
 ### 3. Move Issues Through Columns
 
